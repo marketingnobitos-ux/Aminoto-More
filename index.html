@@ -380,42 +380,78 @@
     <!-- ════════════════════════════════════
          KONTAK & CABANG
     ════════════════════════════════════ -->
-    <section id="kontak" class="py-40 bg-bottle-950 relative border-t border-gold/10">
-        <div class="max-w-3xl mx-auto px-6 relative z-10 fade-in text-center">
-            <h2 class="text-gold tracking-[0.4em] text-xs uppercase mb-6 font-medium">Informasi &amp; Kunjungan</h2>
-            <h3 class="text-5xl md:text-6xl font-serif text-white mb-20">Temukan Kami</h3>
+    <section id="kontak" class="py-32 bg-bottle-950 relative border-t border-gold/10">
+        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
 
-            <div class="max-w-md mx-auto mb-20 p-8 border border-gold/20 bg-bottle-900/50 rounded-sm shadow-2xl backdrop-blur-sm">
-                <i data-lucide="clock" class="w-8 h-8 text-gold mx-auto mb-6 opacity-60"></i>
-                <h4 class="text-white font-serif text-2xl mb-3 uppercase tracking-widest">Jam Operasional</h4>
-                <p class="text-gray-400 font-light text-[15px]">
-                    Buka Setiap Hari<br>
-                    <span class="text-gold mt-2 inline-block tracking-[0.3em] text-lg font-bold">10.00 – 22.00 WIB</span>
-                </p>
+            <div class="fade-in mb-14">
+                <h2 class="text-gold tracking-[0.4em] text-xs uppercase mb-6 font-medium">Informasi &amp; Kunjungan</h2>
+                <h3 class="text-5xl md:text-6xl font-serif text-white">Temukan Kami</h3>
             </div>
 
-            <div class="space-y-0 max-w-2xl mx-auto border-t border-gold/10 text-left">
-                <div class="group flex items-center justify-between py-8 border-b border-gold/10 hover:border-gold transition-all duration-700">
-                    <span class="text-xl md:text-2xl font-serif text-gray-300 group-hover:text-white">Cabang Cipto Mangunkusumo</span>
-                    <div class="flex items-center gap-7">
-                        <button onclick="openMap(0)" aria-label="Maps Cipto" class="text-gold/40 hover:text-gold transition-all"><i data-lucide="map-pin" class="w-6 h-6"></i></button>
-                        <a href="https://wa.me/6285194242550"                target="_blank" rel="noopener noreferrer" aria-label="WA Cipto"   class="text-gold/40 hover:text-gold transition-all"><i data-lucide="message-circle" class="w-6 h-6"></i></a>
+            <!-- Jam Operasional -->
+            <div class="fade-in flex justify-center mb-12">
+                <div class="border border-gold/20 bg-bottle-900/50 rounded-sm px-14 py-7 inline-flex flex-col items-center shadow-2xl backdrop-blur-sm">
+                    <i data-lucide="clock" class="w-6 h-6 text-gold mb-3 opacity-60"></i>
+                    <h4 class="text-white font-serif text-lg mb-1 uppercase tracking-widest">Jam Operasional</h4>
+                    <p class="text-gray-400 font-light text-sm">Buka Setiap Hari</p>
+                    <span class="text-gold mt-1 tracking-[0.3em] text-xl font-bold">10.00 – 22.00 WIB</span>
+                </div>
+            </div>
+
+            <!-- 3 Kotak Cabang -->
+            <div class="fade-in grid grid-cols-1 md:grid-cols-3 gap-5">
+
+                <div class="border border-gold/20 bg-bottle-900/40 hover:border-gold/60 hover:bg-bottle-900/70 transition-all duration-500 rounded-sm p-6 text-left">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-9 h-9 rounded-full border border-gold/30 bg-gold/10 flex items-center justify-center flex-shrink-0">
+                            <span class="text-gold font-serif font-bold text-sm">1</span>
+                        </div>
+                        <p class="text-white font-serif text-base leading-tight">Cipto Mangunkusumo</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <button onclick="openMap(0)" class="flex-1 flex items-center justify-center gap-2 border border-gold/20 hover:border-gold hover:bg-gold/10 transition-all duration-300 py-2.5 rounded-sm text-gold/60 hover:text-gold text-[11px] tracking-widest uppercase">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Peta
+                        </button>
+                        <a href="https://wa.me/6285194242550" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 border border-gold/20 hover:border-gold hover:bg-gold/10 transition-all duration-300 py-2.5 rounded-sm text-gold/60 hover:text-gold text-[11px] tracking-widest uppercase">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WA
+                        </a>
                     </div>
                 </div>
-                <div class="group flex items-center justify-between py-8 border-b border-gold/10 hover:border-gold transition-all duration-700">
-                    <span class="text-xl md:text-2xl font-serif text-gray-300 group-hover:text-white">Cabang Sumber</span>
-                    <div class="flex items-center gap-7">
-                        <button onclick="openMap(1)" aria-label="Maps Sumber" class="text-gold/40 hover:text-gold transition-all"><i data-lucide="map-pin" class="w-6 h-6"></i></button>
-                        <a href="https://wa.me/6285185907890"                 target="_blank" rel="noopener noreferrer" aria-label="WA Sumber"   class="text-gold/40 hover:text-gold transition-all"><i data-lucide="message-circle" class="w-6 h-6"></i></a>
+
+                <div class="border border-gold/20 bg-bottle-900/40 hover:border-gold/60 hover:bg-bottle-900/70 transition-all duration-500 rounded-sm p-6 text-left">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-9 h-9 rounded-full border border-gold/30 bg-gold/10 flex items-center justify-center flex-shrink-0">
+                            <span class="text-gold font-serif font-bold text-sm">2</span>
+                        </div>
+                        <p class="text-white font-serif text-base leading-tight">Sumber</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <button onclick="openMap(1)" class="flex-1 flex items-center justify-center gap-2 border border-gold/20 hover:border-gold hover:bg-gold/10 transition-all duration-300 py-2.5 rounded-sm text-gold/60 hover:text-gold text-[11px] tracking-widest uppercase">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Peta
+                        </button>
+                        <a href="https://wa.me/6285185907890" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 border border-gold/20 hover:border-gold hover:bg-gold/10 transition-all duration-300 py-2.5 rounded-sm text-gold/60 hover:text-gold text-[11px] tracking-widest uppercase">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WA
+                        </a>
                     </div>
                 </div>
-                <div class="group flex items-center justify-between py-8 border-b border-gold/10 hover:border-gold transition-all duration-700">
-                    <span class="text-xl md:text-2xl font-serif text-gray-300 group-hover:text-white">Cabang Ciledug</span>
-                    <div class="flex items-center gap-7">
-                        <button onclick="openMap(2)" aria-label="Maps Ciledug" class="text-gold/40 hover:text-gold transition-all"><i data-lucide="map-pin" class="w-6 h-6"></i></button>
-                        <a href="https://wa.me/6285196028883"                 target="_blank" rel="noopener noreferrer" aria-label="WA Ciledug"   class="text-gold/40 hover:text-gold transition-all"><i data-lucide="message-circle" class="w-6 h-6"></i></a>
+
+                <div class="border border-gold/20 bg-bottle-900/40 hover:border-gold/60 hover:bg-bottle-900/70 transition-all duration-500 rounded-sm p-6 text-left">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-9 h-9 rounded-full border border-gold/30 bg-gold/10 flex items-center justify-center flex-shrink-0">
+                            <span class="text-gold font-serif font-bold text-sm">3</span>
+                        </div>
+                        <p class="text-white font-serif text-base leading-tight">Ciledug</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <button onclick="openMap(2)" class="flex-1 flex items-center justify-center gap-2 border border-gold/20 hover:border-gold hover:bg-gold/10 transition-all duration-300 py-2.5 rounded-sm text-gold/60 hover:text-gold text-[11px] tracking-widest uppercase">
+                            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Peta
+                        </button>
+                        <a href="https://wa.me/6285196028883" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 border border-gold/20 hover:border-gold hover:bg-gold/10 transition-all duration-300 py-2.5 rounded-sm text-gold/60 hover:text-gold text-[11px] tracking-widest uppercase">
+                            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WA
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
